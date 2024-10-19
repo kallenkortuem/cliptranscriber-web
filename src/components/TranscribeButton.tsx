@@ -52,7 +52,10 @@ export default function TranscribeButton() {
       </Button>
 
       {error && <p className="text-red-500 mt-2">{error.message}</p>}
-      {data && <p className="mt-2">Transcription: {data.text}</p>}
+      <div>
+      {data && <p className="mt-2">Transcription:</p>}
+      {data && <pre className="text-sm text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 p-2 rounded-md">{JSON.stringify(data, null, 2)}</pre>}
+      </div>
     </div>
   );
 }
