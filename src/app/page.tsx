@@ -9,12 +9,14 @@ export default async function Home() {
   return (
     <div className="grid grid-rows-[auto_20px_1fr_20px] items-center justify-items-center min-h-screen  pb-20 gap-16  font-[family-name:var(--font-geist-sans)]">
       <header className="w-full p-4 flex items-center justify-between fixed top-0 left-0 right-0">
-        <h1 className="text-xl font-bold">My App</h1>
+        <h1 className="text-xl font-bold text-center sm:text-left">
+          Clip Transcriber
+        </h1>
         <div className="flex flex-row gap-4 items-center">
           <DarkModeToggle />
           {!session && (
             <a
-              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-1 sm:px-6 sm:min-w-44"
+              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 px-1 sm:px-6"
               href="/api/auth/login"
             >
               Login
