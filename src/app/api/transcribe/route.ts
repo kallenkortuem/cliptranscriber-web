@@ -52,7 +52,6 @@ export async function POST(req: Request) {
     // Handle different response formats
     let responseBody;
     const contentType = "application/json"; // Default content type is JSON
-    console.log(responseFormat, transcription)
     switch (responseFormat) {
       case "json":
       case "verbose_json":
